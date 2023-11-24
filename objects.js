@@ -13,11 +13,13 @@ var foods = {
 
 // Write code that prints all of the 'keys' of the foods variable 
 // you created above:
-var keys = object.keys(foods);
+var keys = Object.keys(foods); 
+console.log(keys);
 
 // Write code that prints all of the 'values' of the foods variable 
 // you created above:
-var values = object.values(foods);
+var values = Object.values(foods);
+console.log(values);
 
 // Write code that prints the value of the second food of the foods variable 
 // you created above:
@@ -25,13 +27,13 @@ console.log(foods.grapes);
 
 // Write code that adds a food to the foods object. 
 // Then, print the updated object:
-foods.bananas = 12
+foods.bananas = 12;
+console.log(foods);
 
 
 // -------------------
 // Part 2: Email
 // -------------------
-
 
 // Think about all the pieces of information associated with one single email in your inbox.
 // It has a sender, a subject, ...
@@ -40,15 +42,25 @@ foods.bananas = 12
 // value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
 // Write code that logs your email object to the terminal.
-
+var email = {
+  sender: "Turing School",
+  subject: "Welcome to Mod1",
+  date: "Monday",
+  time: "8AM",
+  location: "Zoom"
+}
 
 // Write code that logs all of the 'keys' of the email object 
 // you created above:
-// YOUR CODE HERE
+var keys = Object.keys(email);
+console.log(keys);
+
 
 // Write code that logs all of the 'values' of the email object 
 // you created above:
-// YOUR CODE HERE
+
+var values = Object.values(email);
+console.log(values);
 
 
 // -------------------
@@ -96,6 +108,32 @@ console.log(posts[0]);
 // good to have some exposure before going into Mod 1.
 
 
-// YOU DO: Create an array of at least 3 EMAIL Objects, using the same 
-// key-value pairs you used in your email Object above.
-// Then, print the email Array to the Terminal.
+
+
+
+var emailArray = [
+  {
+    sender: "Turing School",
+    subject: "Welcome to Mod1",
+    date: "Monday, November 27th",
+    time: "8:00 AM",
+    location: "Zoom"
+  } ,
+  {
+    sender: "Mom",
+    subject: "Black Friday shopping is on fire",
+    date: "Friday, November, 24th",
+    time: "12:00 PM",
+    location: "AmaZon.com"
+  } ,
+  {
+    sender: "Work",
+    subject: "Submit the proposal by 6pm",
+    date: "Friday, December 3rd",
+    time: "3:30 PM",
+    location: "Email reminder"
+  }
+  
+];
+
+console.log(emailArray)
